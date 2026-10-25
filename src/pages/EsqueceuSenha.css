@@ -1,0 +1,138 @@
+/* Fundo com degradê azul */
+.painel-azul {
+  background: linear-gradient(135deg, #061d47 0%, #0a3470 55%, #0e4a94 100%);
+}
+
+/* Quadradinho azul com o "U" */
+.logo-u {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2a7bea, #0b4fb3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.logo-titulo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  line-height: 1.1;
+}
+
+.logo-sub {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+/* "LOJA UNIVERSITÁRIA" com sublinhado */
+.selo {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #7fb2ff;
+  border-bottom: 1px solid #7fb2ff;
+  padding-bottom: 2px;
+}
+
+/* Frase grande */
+.titulo-grande {
+  font-size: clamp(2.5rem, 4vw, 3.75rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  max-width: 520px;
+}
+
+.texto-apoio {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 420px;
+}
+
+/* Citação com barrinha azul à esquerda */
+.citacao {
+  border-left: 2px solid #3b82f6;
+  padding-left: 1.75rem;
+  max-width: 340px;
+}
+.citacao p {
+  font-weight: 500;
+}
+.citacao small {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* ===== LADO DO FORMULÁRIO ===== */
+.lado-form {
+  background: #f7f9fc;
+}
+
+.area-form {
+  max-width: 440px;
+}
+
+.sobretitulo {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #0b63ce;
+}
+
+.titulo-form {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: #0b2a5b;
+}
+
+.texto-cinza {
+  color: #5b6b80;
+}
+
+.rotulo {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0b2a5b;
+}
+
+.campo {
+  height: 48px;
+  border: 1px solid #dfe5ee;
+  border-radius: 8px;
+}
+.campo:focus {
+  border-color: #0b63ce;
+  box-shadow: 0 0 0 3px rgba(11, 99, 206, 0.15);
+}
+
+.btn-unifor {
+  height: 48px;
+  background: #0b63ce;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 6px 16px rgba(11, 99, 206, 0.25);
+}
+.btn-unifor:hover {
+  background: #0952ad;
+  color: #fff;
+}
+
+.link-unifor {
+  color: #0b63ce;
+  font-weight: 700;
+  text-decoration: none;
+}
+.link-unifor:hover {
+  text-decoration: underline;
+}
