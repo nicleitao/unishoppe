@@ -1,33 +1,39 @@
 /* Fundo com degradê azul */
 .painel-azul {
   background: linear-gradient(135deg, #061d47 0%, #0a3470 55%, #0e4a94 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-/* Quadradinho azul com o "U" */
-.logo-u {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #2a7bea, #0b4fb3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 1.4rem;
+/* Círculos decorativos no fundo do painel (como no protótipo).
+   ::before e ::after criam elementos "de mentira" só com CSS. */
+.painel-azul::before,
+.painel-azul::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 80px solid rgba(255, 255, 255, 0.025);
+  pointer-events: none;
+}
+.painel-azul::before {
+  width: 760px;
+  height: 760px;
+  right: -260px;
+  bottom: -300px;
+}
+.painel-azul::after {
+  width: 460px;
+  height: 460px;
+  right: -110px;
+  bottom: -150px;
 }
 
-.logo-titulo {
-  font-weight: 700;
-  font-size: 1.2rem;
-  letter-spacing: 0.15em;
-  line-height: 1.1;
+/* Deixa o conteúdo do painel por cima dos círculos */
+.painel-azul > * {
+  position: relative;
+  z-index: 1;
 }
 
-.logo-sub {
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-}
 
 /* "LOJA UNIVERSITÁRIA" com sublinhado */
 .selo {
@@ -80,12 +86,6 @@
   max-width: 440px;
 }
 
-.sobretitulo {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  color: #0b63ce;
-}
 
 .titulo-form {
   font-size: 2rem;
@@ -114,25 +114,27 @@
   box-shadow: 0 0 0 3px rgba(11, 99, 206, 0.15);
 }
 
-.btn-unifor {
+
+
+
+/* ===== ESTILOS DA TELA DE LOGIN ===== */
+
+/* Botão branco com borda (demonstração administrativa) */
+.btn-contorno {
   height: 48px;
-  background: #0b63ce;
-  color: #fff;
-  font-weight: 700;
+  background: #fff;
+  border: 1px solid #dfe5ee;
   border-radius: 8px;
-  border: none;
-  box-shadow: 0 6px 16px rgba(11, 99, 206, 0.25);
+  color: #0b2a5b;
+  font-weight: 700;
 }
-.btn-unifor:hover {
-  background: #0952ad;
-  color: #fff;
+.btn-contorno:hover {
+  background: #f0f4fa;
+  border-color: #c9d3e1;
 }
 
-.link-unifor {
-  color: #0b63ce;
-  font-weight: 700;
-  text-decoration: none;
-}
-.link-unifor:hover {
-  text-decoration: underline;
+/* Textinho dos termos de uso */
+.termos {
+  font-size: 0.75rem;
+  color: #8a97a8;
 }

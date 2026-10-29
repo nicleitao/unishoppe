@@ -1,3 +1,91 @@
+/* =========================================================
+   ESTILOS GLOBAIS — valem para o site inteiro.
+   Aqui ficam as peças usadas em várias telas (logo, botões,
+   links, títulos pequenos). Estilos de uma tela só ficam no
+   CSS daquela tela.
+   ========================================================= */
+
+/* Variáveis: as cores da marca num lugar só.
+   Mudou aqui, muda no site todo. */
+:root {
+  --azul: #0b63ce;
+  --azul-hover: #0952ad;
+  --azul-escuro: #0b2a5b;
+  --azul-noite: #061d47;
+  --cinza-texto: #5b6b80;
+  --borda: #dfe5ee;
+  --fundo-claro: #f7f9fc;
+}
+
 body {
   font-family: "Manrope", sans-serif;
+  background: #ffffff;
+  color: var(--azul-escuro);
+}
+
+/* ---------- Logo ---------- */
+.logo-u {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2a7bea, #0b4fb3);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.4rem;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+.logo-titulo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  line-height: 1.1;
+}
+.logo-sub {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+.logo-texto-escuro {
+  color: var(--azul-escuro);
+}
+.logo-texto-escuro .logo-sub {
+  color: var(--cinza-texto);
+}
+
+/* ---------- Textos ---------- */
+.sobretitulo {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--azul);
+}
+
+/* ---------- Botões ---------- */
+.btn-unifor {
+  height: 48px;
+  background: var(--azul);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 6px 16px rgba(11, 99, 206, 0.25);
+}
+.btn-unifor:hover,
+.btn-unifor:focus-visible {
+  background: var(--azul-hover);
+  color: #fff;
+}
+
+/* ---------- Links ---------- */
+.link-unifor {
+  color: var(--azul);
+  font-weight: 700;
+  text-decoration: none;
+}
+.link-unifor:hover {
+  text-decoration: underline;
 }
